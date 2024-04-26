@@ -46,11 +46,13 @@ Example: Animal class and its subclasses (Dog, Cat)
 
 - The subclass can then extend or modify the behavior of the superclass.
 
-- In the example, the Animal class serves as the superclass, providing a common interface for all animals.
+- In the example, We have a base class Employee with attributes name and salary, and a method calculate_pay to calculate the salary
 
-- The Dog and Cat subclasses inherit from the Animal class and override the speak method with their own implementation.
+- We have two subclasses: Developer and Manager, representing different types of employees.
 
-- This inheritance allows code reuse and promotes a hierarchical organization of classes.
+- Each subclass inherits from the Employee class and adds its own attributes and methods.
+
+- The Developer subclass adds a programming_language attribute and a write_code method, while the Manager subclass adds a department attribute and a manage_team method.
 
 <br><br>
 
