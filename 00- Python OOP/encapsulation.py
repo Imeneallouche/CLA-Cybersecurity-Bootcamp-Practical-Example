@@ -2,11 +2,8 @@ class BankAccount:
 
     # the constructor method 
     # always there, automatically called, initializes the class attributes
-    def __init__(self, x):
-        # self.{attribute)}
-        # self._(attribute)
-        # self.__(attribute)
-        self.__balance = x
+    def __init__(self, initial_balance=0):
+        self.balance = initial_balance
     
 
     # method 1 of the class, an action that an object of this class could do

@@ -8,10 +8,10 @@ class Employee:
 
 
 class Developer(Employee):
-    def __init__(self, x, y, a):
-        super().__init__(x, y)
+    def __init__(self, name, salary, progLang):
+        super().__init__(name, salary)
         
-        self.programming_language = a
+        self.programming_language = progLang
 
     def write_code(self):
         return f"{self.name} is writing code in {self.programming_language}."
@@ -19,9 +19,9 @@ class Developer(Employee):
 
 
 class Manager(Employee):
-    def __init__(self, name, salary, d):
+    def __init__(self, name, salary, dept):
         super().__init__(name, salary)
-        self.department = d
+        self.department = dept
 
     def manage_team(self):
         return f"{self.name} is managing the {self.department} team."
