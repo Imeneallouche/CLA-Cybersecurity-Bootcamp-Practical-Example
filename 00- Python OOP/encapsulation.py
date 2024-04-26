@@ -2,8 +2,12 @@ class BankAccount:
 
     # the constructor method 
     # always there, automatically called, initializes the class attributes
-    def __init__(self, initial_balance=0):
-        self.balance = initial_balance
+    def __init__(self, x):
+        # self.{attribute)}
+        # self._(attribute)
+        # self.__(attribute)
+        self.__balance = x
+    
 
     # method 1 of the class, an action that an object of this class could do
     # deposit money: increments the balance with the amount deposited 
@@ -27,9 +31,12 @@ class BankAccount:
         return self.balance
 
 
+
+
+# MAIN PROGRAM 
 # Create a bank account object
-account = BankAccount(1000)
-account.deposit(100)
-print("Current Balance:", account.get_balance())
-account.withdraw(50)
-print("Current Balance:", account.get_balance())
+account = BankAccount()
+
+print(account.get_balance())
+
+#account.deposit(100)

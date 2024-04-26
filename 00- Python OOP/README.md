@@ -37,7 +37,7 @@ Example: Shape and its subclasses (Rectangle, Circle)
 # 3. Inheritance
 
 ```yaml
-Example: Animal class and its subclasses (Dog, Cat)
+Example: Employee class and its subclasses (Manager, Developer)
 ```
 
 ### Explanation:
